@@ -304,7 +304,7 @@ margin-top: 14px;
     padding: 17px 46px;
     position: relative;
     margin-top: 11px;
-    height: 61px;
+    min-height: 61px;
 }
 .wrap-ask .ask-block:after {
     content: "+";
@@ -313,14 +313,9 @@ margin-top: 14px;
     top: 15px;
     font-size: 36px;
 }
-.wrap-ask .ask-block-:after {
-    content: "+";
-    position: absolute;
-    right: 27px;
-    top: 15px;
-    font-size: 36px;
+.wrap-ask .ask-block-minus:after {
+    content: "-";
 }
-
 .wrap-ask .ask-top {
     font-size: 20px;
     color: #242f51;

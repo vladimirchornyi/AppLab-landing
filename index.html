@@ -317,7 +317,7 @@
                         <p class="text-info">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches <br> to corporate strategy foster collaborative thinking to further the overall value proposition. Organically <br> grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
                     </div>
                     <div class="wrap-ask">
-                        <div class="ask-block ask-block-">
+                        <div class="ask-block">
                             <p class="ask-top">App installation failed, how to update system information?</p>
                             <p class="ask-bot d-n">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
                         </div>
@@ -385,8 +385,10 @@
 
         divs.forEach(el => el.addEventListener('click', event => {
             if (el.querySelector(".ask-bot.d-n")) {
+                el.classList.add("ask-block-minus");
                 el.querySelector(".ask-bot.d-n").classList.remove("d-n");
             } else {
+                el.classList.remove("ask-block-minus");
                 el.querySelector(".ask-bot").classList.add("d-n");
             }
         }));
