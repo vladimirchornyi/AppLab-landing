@@ -10,6 +10,9 @@ p {
     line-height: 26px;
     color: #616368;
 }
+.button {
+    cursor: pointer;
+}
 header a {
     color: #242f51;
 }
@@ -602,6 +605,7 @@ margin-top: 14px;
     font-weight: bold;
     color: #ffffff;
     transition: all 0.5s ease-out;
+    cursor: pointer;
 }
 .button-right {
     width: 130px;
@@ -615,6 +619,7 @@ margin-top: 14px;
     font-size: 16px;
     color: #616368;
     transition: all 0.5s ease-out;
+    cursor: pointer;
 }
 .monthly-wrap {
     margin-top: 75px;
@@ -636,11 +641,16 @@ margin-top: 14px;
     margin-top: 40px;
     margin-left: 2px;
 }
+.apple-google img {
+    cursor: pointer;
+}
 .apple-google {
     margin-top: 45px;
     margin-bottom: 105px;
     margin-left: 20px;
     display: flex;
+    position: relative;
+    z-index: 1;
 }
 .appstore {
     margin-left: 33px;
